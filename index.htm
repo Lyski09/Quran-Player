@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Quranplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="circle">
+                <img src="nav.png" class="na">
+            </div>
+            <div class="circle">
+                <img src="prev.png">
+            </div>
+        </nav>
+        <img src="qari.jpg" class="qari">
+
+        <h1>Surah Al Waqiah</h1>
+        <p>Mishary Rashid Alfasy</p>
+
+        <!-- Add ID to the audio tag -->
+        <audio id="song">
+            <source src="quran.mp3" type="audio/mpeg">
+        </audio>
+
+        <input type="range" value="0" id="progress">
+
+        <!-- Rename the conflicting ID -->
+        <div class="controls" id="controls">
+            <div><img src="prev.png"></div>
+            <div onclick="playPause"><img src="play.png" id="ctrlicon"></div>
+            <div><img src="nxt.png"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
